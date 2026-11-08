@@ -5,23 +5,23 @@ class Oval < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/oval-vote/oval/releases/download/v0.1.8/oval-0.1.8-aarch64-apple-darwin.tar.gz"
-      sha256 "6433ad3b125181ad7b0afc4ba90f1991fd7c53e4caaad2b01a8e3bde889da81e"
+      url "https://github.com/oval-vote/oval/releases/download/v0.1.9/oval-0.1.9-aarch64-apple-darwin.tar.gz"
+      sha256 "205a50dcc93c946b5e8aa3eb332aceb489aacb25ad4e9edda26089def9665a20"
     end
     on_intel do
-      url "https://github.com/oval-vote/oval/releases/download/v0.1.8/oval-0.1.8-x86_64-apple-darwin.tar.gz"
-      sha256 "8c1dfdf2f1d1edd639d4d3c1b4b284c0f7d50b6689e73e8730863da335dbea53"
+      url "https://github.com/oval-vote/oval/releases/download/v0.1.9/oval-0.1.9-x86_64-apple-darwin.tar.gz"
+      sha256 "4810a95ab5eae8d3d278091c8b8b7119c792d51e047c69fac45aed3334eabb28"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/oval-vote/oval/releases/download/v0.1.8/oval-0.1.8-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "a6bd00bbcd4c1f4556d473355b20b69ed5b292aee200e4b2b8b6ee7208c6e36c"
+      url "https://github.com/oval-vote/oval/releases/download/v0.1.9/oval-0.1.9-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "3cb3312aa420a9918b0bae847d30b1e508789c1073b6f4d1746c71f927443641"
     end
     on_intel do
-      url "https://github.com/oval-vote/oval/releases/download/v0.1.8/oval-0.1.8-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "6628438571dafb984c3d9e747e6492b9bb1189a62ca51f397cd03a606fd5da28"
+      url "https://github.com/oval-vote/oval/releases/download/v0.1.9/oval-0.1.9-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "8aff349a076d9932eb6a5eb1434836dfd8f39566b7b79876a0e1a85bef9a9cd8"
     end
   end
 
