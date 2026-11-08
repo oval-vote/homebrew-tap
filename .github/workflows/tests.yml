@@ -17,13 +17,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: Homebrew/actions/setup-homebrew@main
-      - uses: actions/checkout@v7
-        with:
-          path: tap
+      - run: brew style oval-vote/tap
       - run: |
-          brew tap oval-vote/tap "file://$PWD/tap"
-          brew style oval-vote/tap
-          if ls tap/Formula/*.rb >/dev/null 2>&1; then
+          if ls "$(brew --repository oval-vote/tap)"/Formula/*.rb >/dev/null 2>&1; then
             brew audit --strict --tap oval-vote/tap
             brew install oval-vote/tap/oval
             brew test oval-vote/tap/oval
